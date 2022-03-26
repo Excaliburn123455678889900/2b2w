@@ -82,7 +82,7 @@ const askForSecrets = async () => {
 	}
 	if (localConf.discordBot) {
 		dc = new discord.Client();
-		dc.login(discordBotToken??config.get('BotToken')).catch(()=>{
+		dc.login("OTE1NDkzMDc0MzIxNDMyNTc5.YacZXQ.kXL5ZEkV1TyWLIzzrCK0Q8G-9u4").catch(()=>{
 			console.warn("There was an error when trying to log in using the provided Discord bot token. If you didn't enter a token this message will go away the next time you run this program!"); //handle wrong tokens gracefully
 		});
 		dc.on('ready', () => {
